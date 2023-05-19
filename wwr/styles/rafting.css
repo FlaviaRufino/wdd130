@@ -1,0 +1,84 @@
+/* Set up the font */
+body {
+    font-family: 'Noto Sans Display', sans-serif;
+  }
+  
+  /* Define the colors */
+  :root {
+    --primary-color: darkgoldenrod;
+    --secondary-color: #9fbace;
+    --accent1-color: #4b5354;
+    --accent2-color: #F2DA88;
+  }
+  
+  /* Style the hero section */
+  .hero {
+    position: relative;
+  }
+  
+  .hero img {
+    display: block;
+    width: 100%;
+  }
+  
+  .hero h1,
+  .hero article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+  
+  /* Float the image in the hero article to the right */
+  .hero article img {
+    float: right;
+    margin-left: 20px;
+  }
+  
+  /* Remove text-decoration from social media links */
+  .sociallinks img {
+    text-decoration: none;
+  }
+  /* Set up the font */
+body {
+  font-family: 'Noto Sans Display', sans-serif;
+}
+
+/* Define the colors */
+:root {
+  --primary-color: darkgoldenrod;
+  --secondary-color: #9fbace;
+  --accent1-color: #4b5354;
+  --accent2-color: #F2DA88;
+}
+
+/* Style the hero section */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+}
+
+.hero h1,
+.hero article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+/* Float the image in the hero article to the right */
+.hero article img {
+  float: right;
+  margin-left: 20px;
+}
+
+/* Remove text-decoration from social media links */
+.sociallinks img {
+  text-decoration: none;
+}
