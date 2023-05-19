@@ -1,47 +1,5 @@
 /* Set up the font */
 body {
-    font-family: 'Noto Sans Display', sans-serif;
-  }
-  
-  /* Define the colors */
-  :root {
-    --primary-color: darkgoldenrod;
-    --secondary-color: #9fbace;
-    --accent1-color: #4b5354;
-    --accent2-color: #F2DA88;
-  }
-  
-  /* Style the hero section */
-  .hero {
-    position: relative;
-  }
-  
-  .hero img {
-    display: block;
-    width: 100%;
-  }
-  
-  .hero h1,
-  .hero article {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-  }
-  
-  /* Float the image in the hero article to the right */
-  .hero article img {
-    float: right;
-    margin-left: 20px;
-  }
-  
-  /* Remove text-decoration from social media links */
-  .sociallinks img {
-    text-decoration: none;
-  }
-  /* Set up the font */
-body {
   font-family: 'Noto Sans Display', sans-serif;
 }
 
@@ -53,7 +11,33 @@ body {
   --accent2-color: #F2DA88;
 }
 
-/* Style the hero section */
+/* Header Styles */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 10px;
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin-right: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Hero Styles */
 .hero {
   position: relative;
 }
@@ -72,13 +56,64 @@ body {
   color: #fff;
 }
 
-/* Float the image in the hero article to the right */
 .hero article img {
   float: right;
   margin-left: 20px;
 }
 
-/* Remove text-decoration from social media links */
-.sociallinks img {
+/* Section Styles */
+section {
+  margin: 30px 0;
+}
+
+section h2 {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+section p {
+  font-size: 16px;
+  color: #555;
+}
+
+.rafting-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rafting-images figure {
+  flex-basis: 18%;
+  margin: 0;
+}
+
+.rafting-images img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.rafting-images figcaption {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--accent1-color);
+  color: #fff;
+  padding: 10px;
+  text-align: right;
+}
+
+.sociallinks {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sociallinks a {
   text-decoration: none;
 }
