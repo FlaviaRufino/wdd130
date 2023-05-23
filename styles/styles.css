@@ -1,0 +1,135 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    display:grid;
+    align-items: center;
+}
+
+/* Main max-width */
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+/* Nav background and padding */
+nav {
+    background-color: #871313;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Nav link color, display, and padding */
+nav a {
+    display: block;
+    color: white;
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* H1 padding and color */
+h1 {
+    padding: 1rem;
+    color: rgb(180, 70, 101);
+}
+
+/* Img width, height, border, padding, and box-shadow */
+img {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
+/* P padding */
+p {
+    padding: 20px;
+}
+
+/* Aside width, border, padding, background-color, color, text-align, and position */
+aside {
+    width: 20rem;
+    border: 1px solid rgba(219, 98, 46, 0.2);
+    padding: 1em;
+    background-color: rgb(225, 147, 99);
+    color: #871313;
+    text-align: center;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+/* Aside img width and height */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Aside h2 position */
+aside h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Main img float, width, and height */
+main img {
+    float: right;
+    width: 150px;
+    height: auto;
+}
+
+/* Footer margin-top, border-top, and text-align */
+header, .grid , footer {
+    margin-top: 1em;
+    border-top: 1px solid #000;
+    text-align: center;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+/* Class Selector */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+    align-self: center;
+}
+
+/* Ul text-align */
+ul {
+    text-align: center;
+}
+
+grid-template-colums
+
+.grid {
+    display: grid;
+    grid-template-columns: auto 20rem;
+    align-items: center;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+main {
+    grid-column: 1/2;
+    margin: 1rem;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+
+}
