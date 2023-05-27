@@ -7,8 +7,47 @@
 <meta name="description" content="Page about Flavia Rufino and my progess on the wdd130 course through BYUI.">
 <meta name="author" content="Flavia Rufino">
 <link rel="stylesheet" href="week3/styles/poll.form.css">
+  <style>
+    .form-item {
+      display: grid;
+      align-items: center;
+    }
+
+    .column1 {
+      grid-template-columns: 3fr 1fr;
+      margin: 0.5rem 0;
+    }
+
+    .column2 {
+      grid-template-columns: 1fr 2fr;
+      margin: 0.5rem 0;
+    }
+  </style>
 </head>
 <body>
-    
+  <div class="form-item column2">
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname">
+  </div>
+
+  <div class="form-item column2">
+    <label for="useremail">Email:</label>
+    <input type="email" id="useremail" name="useremail">
+  </div>
+
+  <div class="form-item column1">
+    <label for="browser">Browser Options:</label>
+    <select id="browser" name="browser">
+      <option value="chrome">Chrome</option>
+      <option value="firefox">Firefox</option>
+      <option value="safari">Safari</option>
+    </select>
+  </div>
+
+  <div class="form-item column1">
+    <label for="pet">Do you have a pet?</label>
+    <input type="checkbox" id="pet" name="pet" value="yes">
+    <label for="pet">Yes</label>
+  </div>
 </body>
 </html>
